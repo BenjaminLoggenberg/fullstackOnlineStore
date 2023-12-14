@@ -6,6 +6,7 @@ import Home from './components/home/home'
 import ShopPage from './components/shop/shopPage'
 import ShoppingCart from './components/shop/shoppingCart'
 import ContactPage from './components/contact/contactPage'
+import Product from './components/shop/product'
 import { Link, Route, Routes } from 'react-router-dom'
 
 
@@ -26,6 +27,7 @@ function App() {
 <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/shop" element={<ShopPage /> } />
+  <Route path="/shop/item/:id" element={<Product /> } />
   <Route path="/cart" element={<ShoppingCart />} />
   <Route path="/contact" element={<ContactPage />} />
 </Routes>
